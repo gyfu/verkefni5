@@ -2,8 +2,8 @@ collections:
         authors:
                 output: true
 
-baseurl: "/index.html"
-url: "https://gyfu.github.io"
+baseurl: ""
+url: "" 
 permalink: /:title
 
 defaults:
