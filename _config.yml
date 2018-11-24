@@ -3,7 +3,7 @@ collections:
                 output: true
 
 baseurl: ""
-url: "https://gyfu.github.io/verkefni5/"
+url: "https://gyfu.github.io"
 permalink: /:title
 
 defaults:
