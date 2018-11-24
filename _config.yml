@@ -2,6 +2,10 @@ collections:
         authors:
                 output: true
 
+baseurl: ""
+url: "https://gyfu.github.io/verkefni5/"
+permalink: /:title
+
 defaults:
   - scope:
       path: ""
