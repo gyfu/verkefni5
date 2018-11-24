@@ -2,7 +2,7 @@ collections:
         authors:
                 output: true
 
-baseurl: ""
+baseurl: "https://gyfu.github.io/"
 url: "" 
 permalink: /:title
 
