@@ -18,3 +18,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+  - scope: 
+    path: "assets/myndir"
+    values: 
+    image: True
