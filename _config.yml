@@ -2,7 +2,7 @@ collections:
         authors:
                 output: true
 
-
+                baseurl: /verkefni5
 defaults:
   - scope:
       path: ""
