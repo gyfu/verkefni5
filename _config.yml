@@ -2,9 +2,6 @@ collections:
         authors:
                 output: true
 
-baseurl: "https://gyfu.github.io/"
-url: "" 
-permalink: /:title
 
 defaults:
   - scope:
