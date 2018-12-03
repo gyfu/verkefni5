@@ -1,5 +1,5 @@
 ---
 layout: post
-author: ted
+author: huginn
 ---
-Man who even likes Jill anyway?
+Vá hvað þetta er búið að vera erfitt

@@ -1,5 +1,5 @@
 ---
-short_name: Huginn
+short_name:  huginn
 name: Huginn Þór Jóhannsson
 position: Höfundur
 ---

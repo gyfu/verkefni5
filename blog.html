@@ -3,10 +3,10 @@ layout: default
 title: Verkefni5 - Blog
 ---
 <h1>Latest blog posts</h1>
-<ul>
+<ul class="postlist">
 	{% for post in site.posts %}
 	<li>
-		<h2><a href="{{ post.url | relative_url}}">{{ post.title}}</a></h2>
+		<a href={{ post.url | relative_url}}>{{ post.title}}</a>
 		<p>{{ post.excerpt }}</p>
 	</li>
 	{% endfor %}
