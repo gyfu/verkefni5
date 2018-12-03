@@ -12,15 +12,22 @@ html {
 	font-family: "Sans-Serif";
 	color: gray;
 }
+@media only screen and (min-width: 0px)
+{
+	.navigation {
 
-@media only screen and (min-width: 500px)
+	}
+}
+
+
+@media only screen and (min-width: 800px)
 {
 	.navigation {
 		width: 100%;
 		text-align: center;	
 	}
 }
-@media only screen and (min-width: 0px) {
+@media only screen and (min-width: 1920px) {
 	.navigation {
 		position: fixed;
 	}
@@ -29,6 +36,4 @@ html {
 .current {
 	color: red;
 }
-.postlist {
-	
-}
+
