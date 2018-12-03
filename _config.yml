@@ -3,6 +3,8 @@ collections:
                 output: true
                 url: "https://gyfu.github.io"
                 baseurl: "/verkefni5"
+
+
 defaults:
   - scope:
       path: ""
@@ -18,7 +20,3 @@ defaults:
       path: ""
     values:
       layout: "default"
-  - scope: 
-    path: "assets/myndir"
-    values: 
-    image: True
