@@ -1,8 +1,8 @@
-- name: Home
+- name: Forsíða
   link: /
-- name: About
+- name: Um þessa síðu
   link: /about.html
-- name: Posts
+- name: Ferill
   link: /blog.html
-- name: Staff
+- name: Höfundur
   link: /staff.html

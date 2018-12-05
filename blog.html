@@ -1,12 +1,13 @@
 ---
 layout: default
-title: Verkefni5 - Blog
+title: Verkefni5 - Ferill
 ---
-<h1>Latest blog posts</h1>
+<h1>Ferill</h1>
+
 <ul class="postlist">
-	{% for post in site.posts %}
+{% for post in site.posts %}
 	<li>
-		<a href={{ post.url | relative_url}}>{{ post.title}}</a>
+		<h2><a href={{ post.url | relative_url}}>{{ post.title}}</a></h1>
 		<p>{{ post.excerpt }}</p>
 	</li>
 	{% endfor %}
