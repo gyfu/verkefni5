@@ -1,3 +1,45 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?8r5v2a");
+  src: url("../fonts/icomoon.eot?8r5v2a#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?8r5v2a") format("truetype"), url("../fonts/icomoon.woff?8r5v2a") format("woff"), url("../fonts/icomoon.svg?8r5v2a#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-home:before {
+  content: "\e900"; }
+
+.icon-book:before {
+  content: "\e91f"; }
+
+.icon-profile:before {
+  content: "\e923"; }
+
+.icon-user:before {
+  content: "\e971"; }
+
+.icon-share2:before {
+  content: "\ea82"; }
+
+.icon-google2:before {
+  content: "\ea89"; }
+
+.icon-facebook2:before {
+  content: "\ea91"; }
+
+@font-face {
+  font-family: "Icomoon"; }
 a {
   color: black;
   text-decoration: none; }
@@ -62,8 +104,20 @@ html {
   text-align: center;
   padding-top: 0.5em;
   margin-bottom: -0.3em;
-  font-size: 200%;
-  border-bottom: 1px solid gray; }
+  font-size: 150%;
+  border-bottom: 1px solid gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "home about post author"; }
+  .navigation .home {
+    grid-area: home; }
+  .navigation .about {
+    grid-area: about; }
+  .navigation .post {
+    grid-area: post; }
+  .navigation .author {
+    grid-area: author; }
   .navigation a {
     margin-left: 1em;
     margin-right: 1em; }

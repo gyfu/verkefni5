@@ -1,8 +1,12 @@
 - name: Forsíða
   link: /
+  icon: icon-home
 - name: Um þessa síðu
   link: /about.html
+  icon: icon-book
 - name: Ferill
   link: /blog.html
+  icon: icon-profile
 - name: Höfundur
   link: /staff.html
+  icon: icon-user
