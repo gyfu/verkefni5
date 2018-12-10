@@ -62,36 +62,47 @@ html {
 	width: 75%;
 	height: 75%;
 }
-.navigation {
-        grid-column-start: 1;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-	width: 100%;
-	text-align: center;
-	padding-top: 0.5em;
-	margin-bottom: -0.3em;
-	font-size: 150%;
-	border-bottom: 1px solid gray;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	grid-template-areas:
-		"home about post author";
-	.home {
-		grid-area: home;
+@media only screen and (min-width: 49px) {
+	.navigation {
+        	grid-column-start: 1;
+        	grid-column-end: 4;
+        	grid-row-start: 1;
+        	grid-row-end: 2;
+		width: 100%;
+		text-align: center;
+		padding-top: 0.5em;
+		margin-bottom: -0.3em;
+		font-size: 150%;
+		border-bottom: 1px solid gray;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		a {
+			margin-left: 1em;
+			margin-right: 1em;
+		}
 	}
-	.about {
-		grid-area: about;
+}
+@media only screen and (min-width: 30em) and  (max-width: 48em) {
+	body {
+		display: block;
+		font-size: 75%;
+		background-color: lightblue;
 	}
-	.post {
-		grid-area: post;
+	.navigation {
+		overflow: hidden;
+		transition: all .15s ease;
+		height: 20px;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
 	}
-	.author {
-		grid-area: author;
+	.navigation:hover {
+		overflow: inherit;
+		margin-bottom: 10px;
+		height: 100px;
 	}
 	a {
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-bottom: 3px;
 	}
 }
