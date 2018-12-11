@@ -1,7 +1,13 @@
+<input type="checkbox" class="icon-home" id="menu"><label for="menu"class="icon-home"></label></input>
+<input type="checkbox" class="icon-share2" id="media"><label for="media" class="icon-share2"></label></input>
 <nav class="navigation">
-	{% for item in site.data.navigation %}
-	<a href="{{ item.link | relative_url  }}" class=" {{ item.icon }} {% if page.url == item.link %} current {% endif %} ">
-		{{ item.name }}
-	</a>
-	{% endfor %}
+		{% for item in site.data.navigation %}
+		<a href="{{ item.link | relative_url  }}" class=" {{ item.icon }} {% if page.url == item.link %} current {% endif %} ">
+			{{ item.name }}
+			</a>
+		{% endfor %}
+</nav>
+<nav class="medianav">
+		<a href="https://www.facebook.com/" class="icon-facebook2"></a>
+		<a href="https://www.google.com/" class="icon-google2"></a>
 </nav>
