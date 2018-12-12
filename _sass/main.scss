@@ -27,6 +27,71 @@ html {
 	color: red;
 }
 @media only screen and (min-width: 49px) {
+	@keyframes ad {
+		from {
+		width: 0;
+		height: 0;
+	}
+		to {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	@keyframes adtwo {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes adthree {
+		from {
+			margin-top: 0;
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+			margin-top: 30px;
+		}
+	}
+	.ad {
+		width: 100%;
+		height: 100%;
+		background-color: orange;
+		animation-name: ad;
+		animation-duration: 4s;
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		h2 {
+			opacity: 0;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 2;
+			animation-name: adthree;
+			animation-delay: 4s;
+			animation-duration: 1s;
+			animation-fill-mode: forwards;
+		}
+		a {
+			opacity: 0;
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 3;
+			color: lightblue;
+			background-color: purple;
+			animation-name: adtwo;
+			animation-delay: 4s;
+			animation-duration: 4s;
+			animation-fill-mode: forwards;
+			padding-top: 1em;
+			border: 1px solid purple;
+			border-radius: 9px;
+		}
+	}
 	input {
 		display: none;
 	}
